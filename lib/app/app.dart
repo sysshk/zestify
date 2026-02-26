@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'router.dart';
 
@@ -20,11 +21,11 @@ class ZestifyApp extends StatelessWidget {
         colorScheme: colorScheme,
         scaffoldBackgroundColor: const Color(0xFFFFF4FA),
         appBarTheme: const AppBarTheme(centerTitle: true),
-        fontFamily: 'Noto Sans KR',
-        textTheme: ThemeData.light().textTheme.apply(
-          fontFamily: 'Noto Sans KR',
-          bodyColor: const Color(0xFF3D2445),
-          displayColor: const Color(0xFF3D2445),
+        textTheme: GoogleFonts.notoSansKrTextTheme(
+          ThemeData.light().textTheme.apply(
+            bodyColor: const Color(0xFF3D2445),
+            displayColor: const Color(0xFF3D2445),
+          ),
         ),
       ),
       initialRoute: AppRouter.login,
