@@ -1,7 +1,6 @@
-﻿import 'package:flutter/material.dart';
-
-import '../screens/home_page.dart';
-import '../screens/login_page.dart';
+import 'package:flutter/material.dart';
+import 'package:zestify/screens/birthday_home_page.dart';
+import 'package:zestify/screens/login_page.dart';
 
 class AppRouter {
   static const String login = '/';

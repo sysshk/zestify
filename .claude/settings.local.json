@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -L \"https://fonts.gstatic.com/s/notosanskr/v36/PbykFmXiEBPT4ITbgNA5Cgm203Tq4JJWq209pU0DPdWuqxJFA4GNDCBYtw.0.woff2\" -o /c/Users/Owner/Desktop/coding/park/zestify/assets/fonts/NotoSansKR-Regular.woff2)",
+      "Bash(curl -L \"https://github.com/google/fonts/raw/main/ofl/notosanskr/NotoSansKR%5Bwght%5D.ttf\" -o /c/Users/Owner/Desktop/coding/park/zestify/assets/fonts/NotoSansKR.ttf)",
+      "Bash(curl -L \"https://github.com/google/fonts/raw/main/ofl/notosanskr/static/NotoSansKR-Regular.ttf\" -o /c/Users/Owner/Desktop/coding/park/zestify/assets/fonts/NotoSansKR.ttf)"
+    ]
+  }
+}

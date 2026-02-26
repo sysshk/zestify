@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "360258541174",
+    "project_id": "zestify-26472",
+    "storage_bucket": "zestify-26472.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360258541174:android:97be23affe837249ebb157",
+        "android_client_info": {
+          "package_name": "com.example.zestify"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwPl5wspFUaxFTTucnfi6uQPNqbdmE1ZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
