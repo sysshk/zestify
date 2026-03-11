@@ -1,5 +1,5 @@
-name: zestify
-description: "A new Flutter project."
+name: cleanup
+description: "cleanup - 전문 청소 서비스"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -36,7 +36,15 @@ dependencies:
   cupertino_icons: ^1.0.8
   firebase_core: ^4.4.0
   firebase_auth: ^6.1.4
+  cloud_firestore: ^6.1.2
   google_fonts: ^8.0.2
+  go_router: ^14.6.2
+  provider: ^6.1.2
+  intl: ^0.20.1
+  url_launcher: ^6.3.1
+  flutter_animate: ^4.5.0
+  google_sign_in: ^6.2.1
+  kakao_flutter_sdk_user: ^1.9.0
 
 dev_dependencies:
   flutter_test:

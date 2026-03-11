@@ -43,3 +43,55 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Claude Code
+.claude/**
+
+# Firebase
+.firebase/
+.firebaserc          # 로컬 Firebase 프로젝트 alias (팀 공유시 포함 가능, 선택)
+*.cache
+
+# Firebase emulator / functions
+.runtimeconfig.json
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# Flutter 자동생성 파일
+.flutter-plugins
+flutter_export_environment.sh
+generated_plugin_registrant.dart
+
+# 환경변수 / 시크릿 (절대 커밋 금지)
+.env
+.env.*
+*.secret
+secrets.dart
+
+# Firebase 시크릿 (퍼블릭 레포 필수 제외)
+google-services.json
+GoogleService-Info.plist
+lib/firebase_options.dart
+
+# VS Code (팀 공유 시 제외)
+.vscode/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# 빌드 산출물
+/build/
+*.apk
+*.aab
+*.ipa
+*.app
+
+# 테스트 커버리지
+/coverage/
+lcov.info

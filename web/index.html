@@ -1,49 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
   <base href="$FLUTTER_BASE_HREF">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="cleanup - 생활청소, 이사청소 전문 서비스">
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="zestify">
+  <meta name="apple-mobile-web-app-title" content="cleanup">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>zestify</title>
+  <title>cleanup | 전문 청소 서비스</title>
   <link rel="manifest" href="manifest.json">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- PortOne (아임포트) V1 결제 SDK -->
+  <script src="https://cdn.iamport.kr/v1/iamport.js"></script>
+
+  <!-- 카카오 주소검색 (Daum Postcode) -->
+  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+  <!-- JS 브릿지 함수 -->
+  <script>
+    // PortOne 결제 요청 브릿지
+    // imp_XXXXXXXX 를 실제 가맹점 UID로 교체하세요
+    function requestPortonePayment(params, callbackName) {
+      IMP.init('imp_XXXXXXXX');
+      IMP.request_pay(JSON.parse(params), function(rsp) {
+        if (window[callbackName]) {
+          window[callbackName](JSON.stringify(rsp));
+        }
+      });
+    }
+
+    // 카카오 주소검색 팝업 브릿지
+    function openKakaoPostcode(callbackName) {
+      new daum.Postcode({
+        oncomplete: function(data) {
+          if (window[callbackName]) {
+            window[callbackName](JSON.stringify(data));
+          }
+        }
+      }).open();
+    }
+  </script>
 </head>
 <body>
-  <!--
-    You can customize the "flutter_bootstrap.js" script.
-    This is useful to provide a custom configuration to the Flutter loader
-    or to give the user feedback during the initialization process.
-
-    For more details:
-    * https://docs.flutter.dev/platform-integration/web/initialization
-  -->
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

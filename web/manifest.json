@@ -1,11 +1,11 @@
 {
-    "name": "zestify",
-    "short_name": "zestify",
+    "name": "cleanup",
+    "short_name": "cleanup",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#1E90FF",
+    "theme_color": "#1E90FF",
+    "description": "cleanup - 생활청소, 이사청소 전문 서비스",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
